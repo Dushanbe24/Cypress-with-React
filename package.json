@@ -1,0 +1,51 @@
+{
+  "name": "react-shopping-cart",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": [],
+  "description": "Shopping cart",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "moxios": "^0.4.0",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-redux": "^5.1.1",
+    "react-scripts": "^2.1.3",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"react-scripts start\"",
+    "server": "nodemon server/app",
+    "cy:open": "cypress open",
+    "cy:test": "npm run cy:verify && npm run cy:info && npm run cy:chrome",
+    "cy:client": "cypress run --spec cypress/e2e/client/*.feature",
+    "cy:chrome": "cypress run --spec cypress/e2e/client/*.feature --browser chrome --record --key a0803631-a8bc-41ba-8ec1-91016eb100bd",
+    "cy:verify": "cypress verify",
+    "cy:info": "cypress info"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^12.2.0",
+    "cypress-wait-until": "^1.7.2",
+    "node-sass": "^4.10.0",
+    "nodemon": "^1.18.6",
+    "prop-types": "^15.6.2",
+    "typescript": "^4.9.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support/step_definitions/*.{js,ts}"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./",
+    "types": ["cypress", "cypress-wait-until", "node"],
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitThis": false,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "experimentalDecorators": true,
+    "module": "commonjs"
+  },
+  "include": [
+    "**/*.*",
+    "support/*.ts",
+    "support/*.js",
+    "cypress/**.ts",
+    "**/*page.ts",
+    "*/**index.js",
+    "**/*.ts",
+    "../../node_modules/cypress",
+    "cypress/**/*.js"
+  ]
+}

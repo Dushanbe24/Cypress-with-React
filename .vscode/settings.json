@@ -1,0 +1,8 @@
+{
+  "cucumberautocomplete.steps": ["cypress/support/step_definitions/*.ts"],
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "cucumberautocomplete.syncfeatures": "features/*.feature",
+  "cucumberautocomplete.smartSnippets": true,
+  "cucumberautocomplete.stepsInvariants": true,
+  "cucumberautocomplete.onTypeFormat": true
+}
